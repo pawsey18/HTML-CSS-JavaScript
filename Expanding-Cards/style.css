@@ -45,18 +45,25 @@ body {
 
 .panel.active { 
     flex: 5;
+    transition: opacity 0.3s;
 }
 
 .panel.active h3 { 
     opacity: 1;
 }
 
+
+@media screen and (max-width: 350px) {
+    .edcar_letter{
+        font-size:120px;
+    }
+
 @media(max-width: 480px) { 
     .container{ 
         width: 100vw;
     }
-    .panel:nth-of-type(4),
-    .panel:nth-of-type(5) { 
+    .panel:nth-of-type(3),
+    .panel:nth-of-type(4) { 
         display: none;
     }
    
